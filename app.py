@@ -29,14 +29,6 @@ def index():
 def grid():
     return render_template('grid.html', title="Griddy Dash!", next_dash="test-dash-panel.html", async_mode=socketio.async_mode)
 
-@app.route('/test-a')
-def test_dash_a():
-    return render_template("dash/test-dash-panel.html")
-
-@app.route('/test-b')
-def test_dash_b():
-    return render_template("dash/other-test-panel.html")
-
 @app.route('/block')
 def test_block():
     return render_template("dash/block-dash-panel.html")

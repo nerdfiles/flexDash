@@ -1,7 +1,5 @@
 $(document).ready(function() {
   elementLoader();
-  //queueDash("block");
-
 
   // Using empty namespace instead of '/test'
   namespace = '';
@@ -26,8 +24,6 @@ $(document).ready(function() {
   });
 });
 
-
-
 function elementLoader() {
   $(document).on('click', '.navBar#topNavBar > button', function () {
     pageName = this.innerHTML;
@@ -35,6 +31,7 @@ function elementLoader() {
     updateActiveClassTo(this);
     })
 
+  // make dash-panel-container clickable for testing
   /*$(document).on('click', 'div.dash-panel-container', function() {
     flipAxis = "Y";
     containerFlipper(this, flipAxis);
@@ -48,9 +45,10 @@ function elementLoader() {
 
 function queueDash(dashPaneltoQueue) {
   var route = "/" + dashPaneltoQueue;
-  console.log(route)
   loadDashHTML(route)
 };
+
+
 
 function loadDashHTML(fromRoute) {
   fetch(fromRoute)
