@@ -55,7 +55,9 @@ function loadDashHTML(fromRoute) {
     .then( response => response.text() )
       .then( (data) => {
         data = data.trim();
-        placeToWrite = document.querySelector('.dash-panel.hidden');
+        //placeToWrite = document.querySelector('.dash-panel.hidden');
+        // @TODO this is inserting a card-container inside a card container, may want to rename
+        placeToWrite = document.querySelector('.card-container');
         placeToWrite.innerHTML = data;
        })
         .then(flipDashView());
