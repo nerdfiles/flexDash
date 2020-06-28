@@ -1,0 +1,155 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2a3a49;
+  font-family: Futura;
+}
+
+.section {
+  background: linear-gradient(to top, #2a3a49, #546475);
+  height: 100vh;
+  width: 100vw;
+}
+
+.navBarBackup {
+  background-color: #2a3a49;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  border-bottom: solid 2px;
+  border-color: #ffca28;
+}
+
+.navBar {
+  background-color: #2a3a49;
+  overflow: hidden;
+  top: 0px;
+  width: 100%;
+  border-bottom: solid 2px;
+  border-color: #ffca28;
+}
+
+
+
+.navBar button {
+  color: #f2f2f2;
+  background-color: #2a3a49;
+  font: inherit;
+  text-align: center;
+  padding: 12px 14px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  border: none;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  cursor: pointer;
+}
+
+.navBar button:hover {
+  color: #2a3a49;
+  background-color: #a4a4a4;
+}
+
+.navBar button.active {
+  color: #2a3a49;
+  background-color: #ffca28;
+  padding: 12px 24px;
+}
+
+
+.vFrame {
+  display: none;
+}
+
+
+.vFrame.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 44px);
+
+  width: 50%;
+  margin:auto;
+}
+
+
+
+.canvas {
+  display: flex;
+  width:95%;
+
+  background-color: #a4a4a4;
+  padding: 3px;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 8px;
+  border: solid 3px;
+  border-color: #2a3a49;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.label {
+  color: #2a3a49;
+}
+
+.label.headline {
+  font-size: 4.5vw;
+
+}
+
+.output-label {
+  font-size: 4.5vw;
+  color: #2a3a49;
+
+}
+
+.context-label {
+  margin-top: -1vw;
+  font-size: 1.25vw;
+  color: #2a3a49;
+
+}
+
+/*
+#test_box {
+  cursor:pointer;
+}
+
+#test_box.active {
+  transform: rotateY(180deg);
+}
+
+#test_box.active > .output_label {
+  font-size: 5vw;
+  color: #2a3a49;
+}
+
+#test_box:hover {
+
+  background-color: #2a3a49;
+  border-color: #ffca28;
+  transform: rotateX(15deg);
+}
+
+#test_box:hover > .output-label, #test_box:hover > .context-label {
+  color: #ffca28;
+}
+
+#test_box:hover > .context-label {
+
+}
+
+.box.top-level>.material-icons {
+  font-size: 10vh;
+  color: #2a3a49;
+}
+*/

@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Static Dash</title>
+    {% endif %}
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+    <script src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf-8" src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+  </head>
+  <body>
+    <div class = "section">
+      <div class = "navBar" id = "topNavBar">
+        <button class="active">Home</button>
+        <button>Water</button>
+        <button>Climate</button>
+        <button>Media</button>
+        <button>Network</button>
+      </div>
+
+      <div class = "vFrame active" id="Home">
+        <div class = "canvas">
+          <div class = "box">
+            <div class = "output-label">Home</div>
+          </div>
+          <div class = "box patterned">
+            <div class = "output-label">42</div>
+          </div>
+        </div>
+      </div>
+
+      <div class = "vFrame" id="Water">
+        <div class = "canvas">
+          <div class = "box">
+            <div class = "output-label">Water</div>
+          </div>
+          <div class = "box">
+            <div class = "output-label">37%</div>
+          </div>
+        </div>
+      </div>
+
+      <div class = "vFrame" id="Climate">
+        <div class = "canvas">
+          <div class = "box">
+            <div class = "output-label">Climate</div>
+          </div>
+          <div class = "box">
+            <div class = "output-label">64</div>
+          </div>
+        </div>
+      </div>
+
+      <div class = "vFrame" id="Media">
+        <div class = "canvas">
+          <div class = "box">
+            <div class = "output-label">Media</div>
+          </div>
+          <div class = "box">
+            <div class = "output-label">83</div>
+          </div>
+        </div>
+      </div>
+
+      <div class = "vFrame" id="Network">
+        <div class = "canvas">
+          <div class = "box">
+            <div class = "output-label">Network</div>
+          </div>
+          <div class = "box">
+            <div class = "output-label">42</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+  </body>
+</html>
